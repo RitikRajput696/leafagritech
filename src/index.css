@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  /* Warm Earth & Sunny Field Surfaces */
+  --color-field-sun: #fbfdf7; /* Bright morning-sunlight background */
+  --color-field-meadow: #f2f7ec; /* Soft pasture green for cards & sections */
+  --color-field-sand: #e8efe0; /* Gentle border / divider tone */
+
+  /* Deep Soil & High Contrast Text */
+  --color-soil-deep: #1c2b18; /* Very dark organic soil (clear, sharp text) */
+  --color-soil-loam: #3a4d34; /* Balanced foliage & readable subtext */
+  --color-soil-soft: #5f7556; /* Muted secondary labels */
+
+  /* Sapling & Growth Accents */
+  --color-sapling-lime: #65a30d; /* Fresh sprout green for badges & highlights */
+  --color-leaf-emerald: #15803d; /* Rich crop foliage for primary buttons */
+  --color-leaf-hover: #166534; /* Deep canopy hover state */
+  --color-sun-amber: #d97706; /* Harvest & poultry warm gold */
+}
+
+html {
+  scroll-behavior: smooth;
+}
