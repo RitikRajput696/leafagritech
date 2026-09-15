@@ -1,5 +1,4 @@
-import React from "react";
-import { Sparkles, ArrowRight, Activity, Sun, CheckCircle } from "lucide-react";
+import { Sparkles, ArrowRight, Sun } from "lucide-react";
 
 export default function Hero() {
   const stats = [
