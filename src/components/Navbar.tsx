@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Sprout, Menu, X, ArrowUpRight } from "lucide-react";
 
 export default function Navbar() {
@@ -16,34 +17,37 @@ export default function Navbar() {
             <Sprout className="w-6 h-6" />
           </span>
           <span>
-            Fresh<span className="text-leaf-emerald"> Agriculture</span>
+            Leaf<span className="text-leaf-emerald"> Agritech</span>
           </span>
         </a>
 
         {/* Desktop Links */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-soil-loam">
-          <a
-            href="#services"
-            className="hover:text-leaf-emerald transition-colors"
-          >
+          <Link to="/" className="hover:text-leaf-emerald transition-colors">
             Home
-          </a>
-          <a
-            href="#poultry"
+          </Link>
+          <Link
+            to="/Projects"
             className="hover:text-leaf-emerald transition-colors"
           >
             Projects
-          </a>
-          <a
-            href="#horticulture"
+          </Link>
+          <Link
+            to="/Services"
             className="hover:text-leaf-emerald transition-colors"
           >
             Services
-          </a>
-          <a href="#soil" className="hover:text-leaf-emerald transition-colors">
+          </Link>
+          <Link
+            to="/About"
+            className="hover:text-leaf-emerald transition-colors"
+          >
             About Us
-          </a>
-          <a href="#soil" className="hover:text-leaf-emerald transition-colors">
+          </Link>
+          <a
+            href="/Gallery"
+            className="hover:text-leaf-emerald transition-colors"
+          >
             Gallery
           </a>
         </nav>
