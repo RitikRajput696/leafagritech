@@ -1,11 +1,11 @@
 import { primaryServices, whyChooseUsList } from "../data/servicesData";
-import { Check, Sparkles, ArrowRight, ShieldCheck } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 
 export default function Services() {
   return (
     <div className="bg-field-sun text-soil-deep min-h-screen">
       {/* Header Banner */}
-      <section className="relative py-20 bg-gradient-to-b from-field-meadow to-field-sun border-b border-field-sand">
+      <section className="relative py-20 bg-linear-to from-field-meadow to-field-sun border-b border-field-sand">
         <div className="max-w-7xl mx-auto px-6 text-center space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-field-sand text-leaf-emerald text-xs font-bold uppercase tracking-wider shadow-sm">
             <Sparkles className="w-3.5 h-3.5 text-sapling-lime" />
