@@ -44,12 +44,12 @@ export default function Navbar() {
           >
             About Us
           </Link>
-          <a
-            href="/Gallery"
+          <Link
+            to="/Gallery"
             className="hover:text-leaf-emerald transition-colors"
           >
             Gallery
-          </a>
+          </Link>
         </nav>
 
         {/* Action Button */}
@@ -75,41 +75,48 @@ export default function Navbar() {
       {/* Mobile Drawer */}
       {isOpen && (
         <div className="md:hidden bg-field-meadow border-b border-field-sand px-6 py-5 space-y-4">
-          <a
-            href="#services"
+          <Link
+            to="/"
+            onClick={() => setIsOpen(false)}
+            className="block font-semibold text-soil-deep"
+          >
+            Home
+          </Link>
+          <Link
+            to="/Projects"
+            onClick={() => setIsOpen(false)}
+            className="block font-semibold text-soil-deep"
+          >
+            Projects
+          </Link>
+          <Link
+            to="/Services"
             onClick={() => setIsOpen(false)}
             className="block font-semibold text-soil-deep"
           >
             Services
-          </a>
-          <a
-            href="#poultry"
+          </Link>
+          <Link
+            to="/About"
             onClick={() => setIsOpen(false)}
             className="block font-semibold text-soil-deep"
           >
-            Poultry Care
-          </a>
-          <a
-            href="#horticulture"
+            About
+          </Link>
+          <Link
+            to="/Gallery"
             onClick={() => setIsOpen(false)}
             className="block font-semibold text-soil-deep"
           >
-            Horticulture
-          </a>
-          <a
-            href="#soil"
-            onClick={() => setIsOpen(false)}
-            className="block font-semibold text-soil-deep"
-          >
-            Soil & Agronomy
-          </a>
-          <a
-            href="#contact"
+            Gallery
+          </Link>
+          <Link
+            to="#contact"
             onClick={() => setIsOpen(false)}
             className="block w-full text-center py-2.5 rounded-full font-bold text-white bg-leaf-emerald mt-2"
           >
             Get in Touch
-          </a>
+          </Link>
         </div>
       )}
     </header>
